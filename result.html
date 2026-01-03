@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plagiarism Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Plagiarism Report</h1>
+
+    <div class="score-box">
+        Plagiarism Percentage: <b>{{ score }}%</b>
+    </div>
+
+    <div class="section">
+        <h2>Extracted Document Text</h2>
+        <div class="text-box">
+            {{ text }}
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Random Phrases & Web Results</h2>
+
+        {% for phrase, urls in results.items() %}
+            <div class="phrase">
+                <h4>{{ phrase }}</h4>
+
+                {% if urls %}
+                    <ul>
+                        {% for url in urls %}
+                            <li>{{ url }}</li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    <p class="note">No direct web sources found</p>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+
+    <a class="back-link" href="/">← Upload another file</a>
+
+</div>
+
+</body>
+</html>

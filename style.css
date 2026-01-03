@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.upload-box {
+    border: 2px dashed #3498db;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    background: #f9fcff;
+}
+
+.upload-box input[type="file"] {
+    margin: 15px 0;
+}
+
+button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #217dbb;
+}
+
+.score-box {
+    background: #ecf7ec;
+    border-left: 6px solid #27ae60;
+    padding: 15px;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.text-box {
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 6px;
+    max-height: 200px;
+    overflow-y: auto;
+    line-height: 1.6;
+}
+
+.phrase {
+    margin-bottom: 15px;
+}
+
+.phrase h4 {
+    margin-bottom: 5px;
+    color: #34495e;
+}
+
+.phrase ul {
+    margin-left: 20px;
+}
+
+.note {
+    color: #888;
+    font-style: italic;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #3498db;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plagiarism Checker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Plagiarism Checker</h1>
+    <p class="subtitle">Upload a document to check for potential plagiarism</p>
+
+    <form method="POST" enctype="multipart/form-data">
+        <div class="upload-box">
+            <p>Please upload a Microsoft Word document (.docx)</p>
+
+            <input type="file" name="file" required>
+            <br>
+            <button type="submit">Check Plagiarism</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
